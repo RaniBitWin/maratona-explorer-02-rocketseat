@@ -1,0 +1,97 @@
+*{
+    /* zerando a estilização padrão do navegador */
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box; /*medida da caixa pela borda */
+  }
+  html{
+    --bg-color: #EDF2FF;
+    --text-color: #00082F;
+    --primary-color: #4263EB ;
+    --primary-color-dark: #364FC7;
+  }
+  body.dark-blue {
+    --bg-color: #00082F;
+    --text-color: #FFFFFF;
+  }
+  body.pink{
+    --bg-color: #FFF0F6;
+    --text-color: #1F000B;
+    --primary-color: #D6336C ;
+    --primary-color-dark: #A61E4D;
+  
+  }
+  
+  body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .container{  
+    text-align: center;
+    width: 300px;
+    margin: 60px auto 0px; /*60px em cima,automático nas laterais e sem nenhuma margem embaixo */
+  }
+  .container img{
+   width: 100%;  /*  relativo ao container */
+  }
+  .container img.avatar{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 3.7px;
+    border: var(--primary-color) solid 4px;
+  
+  }
+  .container h1{
+    font-size: 32px;  
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .container .username{
+    font-family: 'Roboto', monospace;
+    font-weight: 400;  
+    opacity: 0.8;
+    font-size: 18px;
+  
+  }
+  .container ul{
+    list-style: none;
+    margin: 48px 0;
+  }
+  
+  .container ul li a{
+    height: 53px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 16px; /*define os espaços entre eles */
+    border-radius: 6px;
+  
+    transition: background 400ms;
+  }
+  .container ul li a:hover{
+    background: var(--primary-color-dark);
+  }
+  .container footer{
+    font-weight: 500;
+    font-size: 12px;  
+    opacity: 0.6;
+  
+    transition: opacity 400ms;  
+  }
+  .container footer:hover{
+    opacity: 1;
+  }
+  .container footer a{
+    color:var(--text-color)
+  }
